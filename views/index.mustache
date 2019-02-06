@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+{{>head}}
+
+<body class="container">
+	<div class="row">
+
+		<div class="col-md-6 col-md-offset-3" style="text-align:center;margin-bottom:48px">
+			<h1>Welcome to Chat App</h1>
+			<hr />
+			<div style="background:#f9f9f9;border:1px solid #ddd;border-radius:3px;padding:12px">
+				<h2>REGISTER</h2>
+				<form action="/auth/register" method="POST">
+					<input placeholder="username" class="form-control" type="text" name="username"
+					/><br />
+					<input placeholder="password" class="form-control" type="password" name="password"
+					/><br />
+					<button type="submit">Join</button>
+				</form>
+
+					<hr />
+
+				<h2>LOGIN</h2>
+				<form action="/auth/login" method="POST">
+					<input placeholder="username" class="form-control" type="text" name="username"
+					/><br />
+					<input placeholder="password" class="form-control" type="password" name="password"
+					/><br />
+					<button type="submit">Login</button>
+				</form>
+			</div>
+
+		</div>
+	</div>
+
+
+  <!-- Turbo library imports: jQuery, Turbo CDN, sample app.js.
+  NOTE: These should be minified in a build script -->
+  <script type="text/javascript" src="/js/jquery.js"></script>
+
+  <!-- For file uploading. Remove if file upload not necessry -->
+  <script type="text/javascript" src="/js/dropzone.js"></script>
+
+  <!-- Turbo CDN. Better to use CDN than to store locally. -->
+  <script type="text/javascript" src="https://cdn.turbo360-dev.com/dist/turbo.min.js"></script>
+
+  <!-- Your app specific code -->
+  <script type="text/javascript" src="/js/app.js"></script>
+</body>
+</html>
